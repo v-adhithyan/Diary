@@ -32,6 +32,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile 'com.github.afollestad.material-dialogs:core:0.8.5.4'
     compile 'com.github.satyan:sugar:1.5'
+    compile 'com.github.v-adhithyan:peacock:v0.1'
 }
 repositories {
     mavenCentral()
