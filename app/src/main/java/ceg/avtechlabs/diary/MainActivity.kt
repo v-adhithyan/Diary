@@ -10,6 +10,7 @@ import android.util.Log
 import android.view.View
 import ceg.avtechlabs.diary.activities.DiaryEntryActivity
 import ceg.avtechlabs.diary.db.Diary
+import ceg.avtechlabs.diary.db.Query
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, DiaryEntryActivity::class.java)
             startActivity(intent)
         }
-
     }
 
 }
