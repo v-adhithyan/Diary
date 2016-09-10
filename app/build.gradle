@@ -27,11 +27,22 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+
+    // google
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:design:23.4.0'
+
+    //kotlin
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    // ui
     compile 'com.github.afollestad.material-dialogs:core:0.8.5.4'
+    compile 'com.github.medyo:fancybuttons:1.8.1'
+
+    //orm
     compile 'com.github.satyan:sugar:1.5'
+
+    //util
     compile 'com.github.v-adhithyan:peacock:v0.1'
 }
 repositories {

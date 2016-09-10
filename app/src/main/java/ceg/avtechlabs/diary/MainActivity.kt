@@ -31,9 +31,7 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-
         populateEntriesInList()
-
     }
 
     fun populateEntriesInList() {

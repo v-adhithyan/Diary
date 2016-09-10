@@ -42,9 +42,7 @@ class DiaryEntryActivity : AppCompatActivity() {
             //if entry is saved, go to main activity
             if(saved) {
                 Toast.makeText(this, "Diary entry added.", Toast.LENGTH_LONG).show()
-                val intent = Intent(this, MainActivity::class.java)
-                startActivity(intent)
-                finish()
+                goToMainActivity()
             }
 
         }
@@ -53,6 +51,10 @@ class DiaryEntryActivity : AppCompatActivity() {
 
     fun chooseDate(v: View) {
         showDatePicker()
+    }
+
+    fun dismiss(v: View) {
+        goToMainActivity()
     }
 
     private fun showDatePicker() {
@@ -77,5 +79,11 @@ class DiaryEntryActivity : AppCompatActivity() {
             return false
         }
         return true
+    }
+
+    private fun goToMainActivity() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 }
