@@ -14,15 +14,14 @@ fun saveEntry(date: String, entry: String): Boolean {
     return true
 }
 
-fun getToday(): String {
+fun formatDate(date: Int, year: Int, month: Int): String {
     val sb = StringBuilder()
-    val cal = Calendar.getInstance()
 
-    sb.append(cal.get(Calendar.DATE))
+    sb.append(date)
     sb.append("-")
-    sb.append(cal.get(Calendar.MONTH) + 1)
+    sb.append(year)
     sb.append("-")
-    sb.append(cal.get(Calendar.YEAR))
+    sb.append(month)
 
     return sb.toString()
 }

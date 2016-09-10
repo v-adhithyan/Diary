@@ -17,5 +17,4 @@ class Diary: SugarRecord {
         this.entry = entry
     }
 
-
 }
