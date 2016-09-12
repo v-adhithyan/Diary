@@ -29,6 +29,7 @@
             android:layout_marginBottom="10dp"
             android:textAlignment="center"
             android:onClick="chooseDate"
+            android:background="@drawable/border"
             />
 
         <TextView
@@ -54,7 +55,10 @@
             android:layout_marginRight="10dp"
             android:layout_marginBottom="10dp"
             android:hint="@string/entry_hint"
-            android:focusableInTouchMode="true"/>
+            android:focusableInTouchMode="true"
+            android:background="@drawable/border"
+            android:minHeight="200dp"
+            android:paddingLeft="5dp"/>
 
         <!--
             Refer this link, for icon resources
