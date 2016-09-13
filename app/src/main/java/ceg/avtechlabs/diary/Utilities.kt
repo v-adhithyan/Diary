@@ -1,5 +1,8 @@
 package ceg.avtechlabs.diary
 
+import android.content.Context
+import android.graphics.Typeface
+import android.widget.TextView
 import ceg.avtechlabs.diary.db.Diary
 import java.text.SimpleDateFormat
 import java.util.*
@@ -24,4 +27,9 @@ fun formatDate(date: Int, year: Int, month: Int): String {
     sb.append(month)
 
     return sb.toString()
+}
+
+fun TextView.setQuiveraFont(context: Context) {
+    val quivera = Typeface.createFromAsset(context.assets, "quivira.otf")
+    this.typeface = quivera
 }

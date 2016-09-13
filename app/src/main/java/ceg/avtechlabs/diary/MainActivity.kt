@@ -33,20 +33,15 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
 
-        populateEntriesInList()
-        recyclerView.setHasFixedSize(false)
-        val llm = LinearLayoutManager(this)
-        llm.orientation = LinearLayoutManager.VERTICAL
-        recyclerView.layoutManager = llm
-
         val entryAdapter = EntryAdapter(Query().tenEntries)
-        recyclerView.adapter = entryAdapter
-    }
+        recycler_view.apply {
+            setHasFixedSize(true)
+            val llm = LinearLayoutManager(context)
+            llm.orientation = LinearLayoutManager.VERTICAL
+            layoutManager = llm
+            adapter = entryAdapter
+        }
 
-    fun populateEntriesInList() {
-        /*val entries = Query().tenEntries
-        val adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, entries)
-        listView.adapter = adapter*/
     }
 
     private val recyclerView by lazy {

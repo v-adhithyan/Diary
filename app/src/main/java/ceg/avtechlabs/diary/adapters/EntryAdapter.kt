@@ -8,6 +8,7 @@ import android.widget.TextView
 
 import ceg.avtechlabs.diary.R
 import ceg.avtechlabs.diary.models.DiaryEntry
+import ceg.avtechlabs.diary.setQuiveraFont
 
 /**
  * Created by adhithyan-3592 on 12/09/16.
@@ -39,6 +40,7 @@ class EntryAdapter(private val entryList: List<DiaryEntry>) : RecyclerView.Adapt
 
             dateTextView = v.findViewById(R.id.entry_card_item_date) as TextView
             entryTextView = v.findViewById(R.id.entry_card_item_entry) as TextView
+            entryTextView.setQuiveraFont(v.context)
         }
     }
 
