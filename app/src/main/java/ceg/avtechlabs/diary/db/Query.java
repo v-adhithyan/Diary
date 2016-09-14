@@ -20,6 +20,10 @@ public class Query {
         Log.d("den", d.getEntry());
     }
 
+    public void update(String prevDate, String currentDate, String entry) {
+        Diary.deleteAll(Diary.class, "date = ?", prevDate);
+        new Diary(currentDate, entry).save();
+    }
     public List<DiaryEntry> getTenEntries() {
         List<Diary> diary = Diary.findWithQuery(Diary.class, "Select * from Diary limit 10");
         List<DiaryEntry> entries = new LinkedList<DiaryEntry>();
