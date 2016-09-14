@@ -32,7 +32,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.DiaryEntryActivity"></activity>
+        <activity android:name=".activities.DiaryEntryActivity" />
+        <activity android:name=".activities.ViewDiaryEntryActivity"></activity>
     </application>
 
 </manifest>
