@@ -4,9 +4,9 @@
 
 # Screenshots
 
-1. ![add entry](https://raw.githubusercontent.com/v-adhithyan/Diary/master/screenshots/add-entry.png)
+1. <img src="/screenshots/add-entry.png" width="400px">
 
-2. ![list entry](https://raw.githubusercontent.com/v-adhithyan/Diary/master/screenshots/list-entry.png)
+2. <img src="/screenshots/list-entry.png" width="400px">
 
 #### Work in progress.
 
